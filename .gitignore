@@ -2,6 +2,7 @@
 .vs/
 packages/
 
+SportsStore.Domain/bin/
 SportsStore.Domain/obj/
 
 SportsStore.Webapp/bin/
