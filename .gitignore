@@ -2,3 +2,6 @@
 .vs/
 
 SportsStore.Domain/obj/
+
+SportsStore.Webapp/bin/
+SportsStore.Webapp/obj/Debug/
