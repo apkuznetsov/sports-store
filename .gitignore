@@ -1,7 +1,10 @@
 
 .vs/
+packages/
 
 SportsStore.Domain/obj/
 
 SportsStore.Webapp/bin/
-SportsStore.Webapp/obj/Debug/
+SportsStore.Webapp/obj/
+
+SportsStore.UnitTests/obj/
