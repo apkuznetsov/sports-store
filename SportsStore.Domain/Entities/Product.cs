@@ -1,4 +1,4 @@
-﻿namespace SportsStore.Domain
+﻿namespace SportsStore.Domain.Entities
 {
     public class Product
     {
