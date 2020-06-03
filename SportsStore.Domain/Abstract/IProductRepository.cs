@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using SportsStore.Domain.Entities;
+using System.Collections.Generic;
 
 namespace SportsStore.Domain.Abstract
 {
