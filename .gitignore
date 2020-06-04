@@ -27,4 +27,5 @@ SportsStore.Webapp/Content/bootstrap.min.css.map
 SportsStore.Webapp/fonts/
 SportsStore.Webapp/Scripts/
 
+SportsStore.UnitTests/bin/Debug/
 SportsStore.UnitTests/obj/
