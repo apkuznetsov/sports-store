@@ -3,8 +3,12 @@ using Moq;
 using SportsStore.Domain.Abstract;
 using SportsStore.Domain.Entities;
 using SportsStore.Webapp.Controllers;
+using SportsStore.Webapp.HtmlHelpers;
+using SportsStore.Webapp.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Web.Mvc;
 
 namespace SportsStore.UnitTests
 {
@@ -33,6 +37,26 @@ namespace SportsStore.UnitTests
             Assert.IsTrue(products.Length == 2);
             Assert.AreEqual(products[0].Name, "P4");
             Assert.AreEqual(products[1].Name, "P5");
+        }
+
+        [TestMethod]
+        public void Can_Generate_Page_Links()
+        {
+            HtmlHelper myHtmlHelper = null;
+            PagingInfo pagingInfo = new PagingInfo
+            {
+                CurrPage = 2,
+                TotalItems = 28,
+                ItemsPerPage = 10
+            };
+            Func<int, string> pageUrlDelegate = i => "Page" + i;
+
+            MvcHtmlString res = myHtmlHelper.PageLinks(pagingInfo, pageUrlDelegate);
+
+            Assert.AreEqual(@"<a class=""btn btn-default"" href=""Page1"">1</a>"
+                + @"<a class=""btn btn-default btn-primary selected"" href=""Page2"">2</a>"
+                + @"<a class=""btn btn-default"" href=""Page3"">3</a>",
+                res.ToString());
         }
     }
 }
