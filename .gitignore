@@ -13,8 +13,19 @@ SportsStore.Webapp/Content/bootstrap-theme.css
 SportsStore.Webapp/Content/bootstrap-theme.min.css
 SportsStore.Webapp/Content/bootstrap.css
 SportsStore.Webapp/Content/bootstrap.min.css
+SportsStore.Webapp/Content/bootstrap-grid.css
+SportsStore.Webapp/Content/bootstrap-grid.css.map
+SportsStore.Webapp/Content/bootstrap-grid.min.css
+SportsStore.Webapp/Content/bootstrap-grid.min.css.map
+SportsStore.Webapp/Content/bootstrap-reboot.css
+SportsStore.Webapp/Content/bootstrap-reboot.css.map
+SportsStore.Webapp/Content/bootstrap-reboot.min.css
+SportsStore.Webapp/Content/bootstrap-reboot.min.css.map
+SportsStore.Webapp/Content/bootstrap.css.map
+SportsStore.Webapp/Content/bootstrap.min.css.map
 
 SportsStore.Webapp/fonts/
 SportsStore.Webapp/Scripts/
 
+SportsStore.UnitTests/bin/Debug/
 SportsStore.UnitTests/obj/

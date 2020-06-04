@@ -7,5 +7,6 @@ namespace SportsStore.Webapp.Models
     {
         public IEnumerable<Product> Products { get; set; }
         public PagingInfo PagingInfo { get; set; }
+        public string CurrCategory { get; set; }
     }
 }

@@ -1,5 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
-using SportsStore.Domain.Entities;
+﻿using SportsStore.Domain.Entities;
+using System.Data.Entity;
 
 namespace SportsStore.Domain.Concrete
 {

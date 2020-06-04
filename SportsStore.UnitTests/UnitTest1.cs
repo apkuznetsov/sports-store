@@ -6,7 +6,6 @@ using SportsStore.Webapp.Controllers;
 using SportsStore.Webapp.HtmlHelpers;
 using SportsStore.Webapp.Models;
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Web.Mvc;
 
@@ -31,7 +30,7 @@ namespace SportsStore.UnitTests
             ProductController controller = new ProductController(mock.Object);
             controller.PageSize = 3;
 
-            ProductListViewModel res = (ProductListViewModel)controller.List(2).Model;
+            ProductListViewModel res = (ProductListViewModel)controller.List(null, 2).Model;
 
             Product[] products = res.Products.ToArray();
             Assert.IsTrue(products.Length == 2);
@@ -75,7 +74,7 @@ namespace SportsStore.UnitTests
             ProductController controller = new ProductController(mock.Object);
             controller.PageSize = 3;
 
-            ProductListViewModel res = (ProductListViewModel)controller.List(2).Model;
+            ProductListViewModel res = (ProductListViewModel)controller.List(null, 2).Model;
 
             PagingInfo pageInfo = res.PagingInfo;
             Assert.AreEqual(pageInfo.CurrPage, 2);
