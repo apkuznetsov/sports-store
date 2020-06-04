@@ -9,4 +9,12 @@ SportsStore.Webapp/bin/
 SportsStore.Webapp/obj/
 SportsStore.Webapp/SportsStore.Webapp.csproj.user
 
+SportsStore.Webapp/Content/bootstrap-theme.css
+SportsStore.Webapp/Content/bootstrap-theme.min.css
+SportsStore.Webapp/Content/bootstrap.css
+SportsStore.Webapp/Content/bootstrap.min.css
+
+SportsStore.Webapp/fonts/
+SportsStore.Webapp/Scripts/
+
 SportsStore.UnitTests/obj/
