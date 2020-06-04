@@ -2,9 +2,11 @@
 .vs/
 packages/
 
+SportsStore.Domain/bin/
 SportsStore.Domain/obj/
 
 SportsStore.Webapp/bin/
 SportsStore.Webapp/obj/
+SportsStore.Webapp/SportsStore.Webapp.csproj.user
 
 SportsStore.UnitTests/obj/
