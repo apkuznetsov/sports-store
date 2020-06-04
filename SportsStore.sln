@@ -5,9 +5,9 @@ VisualStudioVersion = 16.0.30104.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportsStore.Webapp", "SportsStore.Webapp\SportsStore.Webapp.csproj", "{AF3AACB4-29AB-47C0-A18A-C7641B352BBE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportsStore.Domain", "SportsStore.Domain\SportsStore.Domain.csproj", "{6FF7A791-C811-4373-983B-65D22E74AB6C}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportsStore.UnitTests", "SportsStore.UnitTests\SportsStore.UnitTests.csproj", "{683F4F71-3459-4C81-8495-2286A7282198}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportsStore.Domain", "SportsStore.Domain\SportsStore.Domain.csproj", "{9A799E4B-0355-4D40-8234-69CCE727B419}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,10 +15,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{6FF7A791-C811-4373-983B-65D22E74AB6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6FF7A791-C811-4373-983B-65D22E74AB6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6FF7A791-C811-4373-983B-65D22E74AB6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6FF7A791-C811-4373-983B-65D22E74AB6C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{AF3AACB4-29AB-47C0-A18A-C7641B352BBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{AF3AACB4-29AB-47C0-A18A-C7641B352BBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AF3AACB4-29AB-47C0-A18A-C7641B352BBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -27,6 +23,10 @@ Global
 		{683F4F71-3459-4C81-8495-2286A7282198}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{683F4F71-3459-4C81-8495-2286A7282198}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{683F4F71-3459-4C81-8495-2286A7282198}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A799E4B-0355-4D40-8234-69CCE727B419}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A799E4B-0355-4D40-8234-69CCE727B419}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A799E4B-0355-4D40-8234-69CCE727B419}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A799E4B-0355-4D40-8234-69CCE727B419}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -106,7 +106,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SportsStore.Domain\SportsStore.Domain.csproj">
-      <Project>{6ff7a791-c811-4373-983b-65d22e74ab6c}</Project>
+      <Project>{9a799e4b-0355-4d40-8234-69cce727b419}</Project>
       <Name>SportsStore.Domain</Name>
     </ProjectReference>
     <ProjectReference Include="..\SportsStore.Webapp\SportsStore.Webapp.csproj">
