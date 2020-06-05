@@ -37,7 +37,7 @@ namespace SportsStore.Webapp
 
             routes.MapRoute(
                 name: null,
-                url: "{controller}/{action}",
+                url: "{controller}/{action}"
                 );
         }
     }
