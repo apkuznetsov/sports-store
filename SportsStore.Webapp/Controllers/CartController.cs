@@ -17,7 +17,7 @@ namespace SportsStore.Webapp.Controllers
 
         public ViewResult Index(Cart cart, string returnUrl)
         {
-            return View(new CardIndexViewModel
+            return View(new CartIndexViewModel
             {
                 Cart = cart,
                 ReturnUrl = returnUrl
