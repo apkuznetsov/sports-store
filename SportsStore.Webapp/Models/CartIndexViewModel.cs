@@ -2,7 +2,7 @@
 
 namespace SportsStore.Webapp.Models
 {
-    public class CardIndexViewModel
+    public class CartIndexViewModel
     {
         public Cart Cart { get; set; }
         public string ReturnUrl { get; set; }
