@@ -27,6 +27,19 @@ namespace SportsStore.Webapp.Controllers
             return RedirectToAction("Index", new { returnUrl });
         }
 
+        public RedirectToRouteResult RemoveFromCart(int productId, string returnUrl)
+        {
+            Product product = repository.Products
+                .FirstOrDefault(p => p.ProductId == productId);
+
+            if (product != null)
+            {
+                GetCart().RemoveLine(product);
+            }
+
+            return RedirectToAction("Index", new { returnUrl });
+        }
+
         private Cart GetCart()
         {
             Cart cart = (Cart)Session["Cart"];
