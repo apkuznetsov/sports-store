@@ -59,5 +59,20 @@ namespace SportsStore.UnitTests
             Assert.AreEqual(target.Lines.Where(c => c.Product == p2).Count(), 0);
             Assert.AreEqual(target.Lines.Count(), 2);
         }
+
+        [TestMethod]
+        public void Calc_Cart_Total()
+        {
+            Product p1 = new Product { ProductId = 1, Name = "P1", Price = 100M };
+            Product p2 = new Product { ProductId = 2, Name = "P2", Price = 50M };
+            Cart target = new Cart();
+            target.AddItem(p1, 1);
+            target.AddItem(p2, 1);
+            target.AddItem(p1, 3);
+
+            decimal result = target.CalcTotalValue();
+
+            Assert.AreEqual(result, 450M);
+        }
     }
 }
