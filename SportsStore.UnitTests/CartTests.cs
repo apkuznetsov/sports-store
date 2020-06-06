@@ -3,6 +3,7 @@ using Moq;
 using SportsStore.Domain.Abstract;
 using SportsStore.Domain.Entities;
 using SportsStore.Webapp.Controllers;
+using SportsStore.Webapp.Models;
 using System.Linq;
 using System.Web.Mvc;
 
@@ -127,6 +128,18 @@ namespace SportsStore.UnitTests
 
             Assert.AreEqual(result.RouteValues["action"], "Index");
             Assert.AreEqual(result.RouteValues["returnUrl"], "myUrl");
+        }
+
+        [TestMethod]
+        public void Can_View_Cart_Content()
+        {
+            Cart cart = new Cart();
+            CartController target = new CartController(null);
+
+            CartIndexViewModel result = (CartIndexViewModel)target.Index(cart, "myUrl").ViewData.Model;
+
+            Assert.AreEqual(result.Cart, cart);
+            Assert.AreEqual(result.ReturnUrl, "myUrl");
         }
     }
 }
