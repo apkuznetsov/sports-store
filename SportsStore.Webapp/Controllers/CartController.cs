@@ -50,17 +50,5 @@ namespace SportsStore.Webapp.Controllers
             return RedirectToAction("Index", new { returnUrl });
         }
 
-        private Cart GetCart()
-        {
-            Cart cart = (Cart)Session["Cart"];
-
-            if (cart == null)
-            {
-                cart = new Cart();
-                Session["Cart"] = cart;
-            }
-
-            return cart;
-        }
     }
 }
