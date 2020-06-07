@@ -13,7 +13,7 @@
         public string FileLocation = @"c:\sports-store-emails";
     }
 
-    public class EmailOrderProcessor
+    public class EmailOrderProcessor : IOrderProcessor
     {
     }
 }
