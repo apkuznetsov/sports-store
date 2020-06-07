@@ -54,5 +54,10 @@ namespace SportsStore.Webapp.Controllers
         {
             return PartialView(cart);
         }
+
+        public ViewResult Checkout()
+        {
+            return View(new ShippingDetails());
+        }
     }
 }
