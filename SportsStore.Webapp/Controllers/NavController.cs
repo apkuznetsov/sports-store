@@ -14,7 +14,8 @@ namespace SportsStore.Webapp.Controllers
             this.repository = repository;
         }
 
-        public PartialViewResult Menu(string category = null)
+        public PartialViewResult Menu(string category = null,
+            bool isHorizontalLayout = false)
         {
             ViewBag.SelectedCategory = category;
 
@@ -23,7 +24,8 @@ namespace SportsStore.Webapp.Controllers
                 .Distinct()
                 .OrderBy(x => x);
 
-            return PartialView(categories);
+            string viewName = isHorizontalLayout ? "MenuHorizontal" : "Menu";
+            return PartialView(viewName, categories);
         }
     }
 }
