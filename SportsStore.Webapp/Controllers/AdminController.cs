@@ -5,6 +5,7 @@ using System.Web.Mvc;
 
 namespace SportsStore.Webapp.Controllers
 {
+    [Authorize]
     public class AdminController : Controller
     {
         private IProductRepository repository;

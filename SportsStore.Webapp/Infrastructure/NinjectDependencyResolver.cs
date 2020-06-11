@@ -1,6 +1,8 @@
 ﻿using Ninject;
 using SportsStore.Domain.Abstract;
 using SportsStore.Domain.Concrete;
+using SportsStore.Webapp.Infrastructure.Abstract;
+using SportsStore.Webapp.Infrastructure.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -40,6 +42,8 @@ namespace SportsStore.Webapp.Infrastructure
 
             kernel.Bind<IOrderProcessor>().To<EmailOrderProcessor>()
                 .WithConstructorArgument("emailSettings", emailSettings);
+
+            kernel.Bind<IAuthProvider>().To<FormsAuthProvider>();
         }
     }
 }
