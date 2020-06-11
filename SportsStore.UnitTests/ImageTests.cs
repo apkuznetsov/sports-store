@@ -36,5 +36,21 @@ namespace SportsStore.UnitTests
             Assert.IsInstanceOfType(result, typeof(FileResult));
             Assert.AreEqual(product2.ImageMimeType, ((FileResult)result).ContentType);
         }
+
+        [TestMethod]
+        public void Cannot_Retrieve_Image_Data_For_Invalid_Id()
+        {
+            Mock<IProductRepository> mock = new Mock<IProductRepository>();
+            mock.Setup(m => m.Products).Returns(new Product[]
+            {
+                 new Product {ProductId = 1, Name = "P1"},
+                 new Product {ProductId = 2, Name = "P2"}
+            }.AsQueryable());
+            ProductController target = new ProductController(mock.Object);
+
+            ActionResult result = target.GetImage(100);
+
+            Assert.IsNull(result);
+        }
     }
 }
