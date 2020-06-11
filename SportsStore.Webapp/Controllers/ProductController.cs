@@ -1,4 +1,5 @@
 ﻿using SportsStore.Domain.Abstract;
+using SportsStore.Domain.Entities;
 using SportsStore.Webapp.Models;
 using System.Linq;
 using System.Web.Mvc;
@@ -28,14 +29,29 @@ namespace SportsStore.Webapp.Controllers
                 {
                     CurrPage = page,
                     ItemsPerPage = PageSize,
-                    TotalItems = category == null 
-                    ? repository.Products.Count() 
+                    TotalItems = category == null
+                    ? repository.Products.Count()
                     : repository.Products.Where(p => p.Category == category).Count()
                 },
                 CurrCategory = category
             };
 
             return View(model);
+        }
+
+        public FileContentResult GetImage(int productId)
+        {
+            Product product = repository.Products
+                .FirstOrDefault(p => p.ProductId == productId);
+
+            if (product != null)
+            {
+                return File(product.ImageData, product.ImageMimeType);
+            }
+            else
+            {
+                return null;
+            }
         }
     }
 }
